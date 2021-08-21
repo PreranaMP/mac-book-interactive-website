@@ -67,6 +67,7 @@ document.getElementById('apply-button').addEventListener('click', function () {
  if (promoCode == 'stevekaku') {
   totalPrice.innerText = parseInt(totalPriceAmount) * 0.8
  }
+ promoInput.value = '';
 });
 
 // 8gb memory
