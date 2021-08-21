@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Mac Book Pro</title>
+ <!-- CSS link -->
+ <link rel="stylesheet" href="style.css">
+ <!-- Tailwind CSS link -->
+ <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="">
+ <main>
+  <!-- image and product detail -->
+  <section>
+   <div class="grid grid-cols-2 gap-4">
+    <div class="m-8">
+     <img class=" w-3/4" src="images/mac.png" alt="">
+    </div>
+    <div class="w-3/4 m-8">
+     <div>
+      <h1 class="text-6xl">Customize your Blue 24 inch iMac with Apple M1 Chip</h1>
+      <p class="mt-8 text-2xl">Apple M1 chipwith 8 core CPU with 4 performance cores and 4 efficiency cores, 7 core CPU
+       and 16 core
+       Neutral
+       Engine 8GB unfilled memory 256GB SSD Storage two thunderbolt/ USB 4 ports magic mouse and magic keyboard.</p>
+     </div>
+     <!-- memory -->
+     <div class="mt-6">
+      <h3 class="text-3xl font-semibold">Memory</h3>
+      <div class="flex-1">
+       <button id="8gb-memory-button" class="border-2 border-gray-400 rounded-md p-2 m-4 hover:bg-gray-400">8GB Unified
+        memory</button>
+       <button id="16gb-memory-button" class="border-2 border-gray-400 rounded-md p-2 m-4 hover:bg-gray-400">16GB
+        Unified memory</button>
+      </div>
+     </div>
+     <!-- storage -->
+     <div class="mt-6">
+      <h3 class="text-3xl font-semibold">Storage</h3>
+      <div class="flex-1">
+       <button id="256gb-storage" class="border-2 border-gray-400 rounded-md p-2 m-4 hover:bg-gray-400">256 GB SSD
+        Storage</button>
+       <button id="512gb-storage" class="border-2 border-gray-400 rounded-md p-2 m-4 hover:bg-gray-400">512GB SSD
+        Storage</button>
+       <button id="1tb-storage" class="border-2 border-gray-400 rounded-md p-2 m-4 hover:bg-gray-400">1TB SSD
+        Storage</button>
+      </div>
+     </div>
+     <!--Choose your delivery option -->
+     <div class="mt-6">
+      <h3 class="text-3xl font-semibold">Choose Your delivery Option</h3>
+      <div class="flex-1">
+       <button id="free-delivery" class="border-2 border-gray-400 rounded-md p-2 m-4 hover:bg-gray-400">Friday,Aug
+        21,FREE prime
+        delivery</button>
+       <button id="fast-delivery" class="border-2 border-gray-400 rounded-md p-2 m-4 hover:bg-gray-400">Aug 21, Delivery
+        Charge
+        $20</button>
+      </div>
+     </div>
+     <!-- total price list -->
+     <div class="mt-8  divide-black md:divide-solid">
+
+      <table class="mb-4 table-fixed">
+       <tbody>
+        <tr class="">
+         <td class="w-1/2 text-2xl font-semibold">Base Price</td>
+         <td class="w-1/2 text-xl text-center font-semibold">$ <span id="base-price">1299</span> </td>
+        </tr>
+        <tr class="">
+         <td class="w-1/2 text-2xl font-semibold">Memory</td>
+         <td class="w-1/2 text-xl  text-center font-semibold">$ <span id="memory-price">0</span> </td>
+        </tr>
+        <tr>
+         <td class="w-1/2 text-2xl font-semibold">Extra Storage Cost</td>
+         <td class="w-1/ text-xl  text-center font-semibold">$ <span id="storage-price">0</span></td>
+        </tr>
+        <tr>
+         <td class="w-1/2 text-2xl font-semibold">delivery Charge</td>
+         <td class="w-1/2 text-xl  text-center font-semibold">$ <span id="delivery-price">0</span> </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="mb-4 table-fixed">
+       <tbody>
+        <hr>
+        <tr class="">
+         <td class="w-1/2 m-4 text-2xl font-bold">Total cost: </td>
+         <td class="w-1/2 m-4 text-xl  font-semibold">$ <span id="total-cost">1299</span> </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <!-- promo code -->
+     <div>
+      <h1 class="mt-8 text-4xl font-bold opacity-50">Add Promo Code</h1>
+      <div class="flex-1">
+       <input id="promo-input" class="mt-4 h-8 w-3/4 border border-gray-400 rounded-md p-4" type="text">
+       <button id="apply-button"
+        class="mt-4 h-8 w-1/4 font-bold text-white border rounded-md bg-red-400 text-center">Apply</button>
+      </div>
+     </div>
+    </div>
+   </div>
+
+  </section>
+  <!-- total price -->
+  <hr>
+  <section class="mt-8">
+   <h1 class="text-center text-6xl font-semibold">TOTAL: $<span id="total-amount-price">1299</span> </h1>
+  </section>
+ </main>
+
+
+
+
+ <!-- js link -->
+ <script src="js/index.js"></script>
+</body>
+
+</html>
